@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="./css/fontello.css">
+     <!--bootstrap-->
+     <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+
+     <title>Analisis Covid | Configuracion Pais</title>
+</head>
+<body>
+     <!--INICIO HEADER-->  
+     <header class="header">
+        <div class="container logo-nav-container">
+            <a href="index.html" class="brand-logo icon-contacto">ANALISIS COVID</a>
+            <span class="menu-icon icon-menu"> ver Menu </span>
+            <nav class=navigation>
+                <ul>
+                    <li><a href="ModificarPais.html"class='icon-configuracion'>Actualizar Pais </a></li>
+                    <li><a href="configuracion.html"class='icon-undo'>Configuracion </a></li>
+                    <li><a href="index.html" class="icon-power-outline"> Salir</a></li>
+                </ul>
+            </nav>
+           
+        </div>
+    </header>
+    <!--FIN HEADER-->
+    
+        <!--INICIO MAIN-->
+    <main class="main-lista-usuario">
+        <div class="container ">
+            <h1 class="titulos">CONFIGURACION DE PAISES </h1>
+            <h2 class="titulos">Agregar o Eliminar Pais</h2>
+            <form id="form-country">
+                <div class="form-group">
+                    <label for="nombrePais">Nombre Pais</label>
+                    <input type="text" id="nombrePais" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="Descripcion">Descripcion</label>
+                    <input type="text" id="Descripcion" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="continente">Continente</label>
+                    <select id="opc" required>
+                        <option value="America">America</option>
+                        <option value="Oceanía/Australia">Oceanía/Australia</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europa">Europa</option>
+                        <option value="Africa">Africa</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label for="Numero de muertos">Numero de Muertos</label>
+                    <input type="text" id="NumeroMuertos" class="form-control" required>
+                </div>
+            </br>
+            <input type="submit" value="Agregar Pais" class="btn btn-primary col-sm-12 ">
+        </form>
+            
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Descripcion</th>
+                        <th>Continente</th>
+                        <th>NumeroMuertos</th>
+                        <th>Nombre Pais</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="countries-list"></tbody>
+            </table>
+        </div>
+    </main>
+</body>
+<script src="./js/configuracionPais.js"></script>
+<script src="./js/app.js"></script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- BOOSTRAP -->
+     <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+     <!-- CSS -->
+     <link rel="stylesheet" href="./css/style.css">
+     <!-- ICONOS -->
+     <link rel="stylesheet" href="./css/fontello.css">
+
+    <title>Analisis Covid | Continentes </title>    
+</head>
+<body>
+  <header class="header">
+    <div class="container logo-nav-container">
+        <a href="index.html" class="brand-logo icon-contacto">ANALISIS COVID</a>
+        <span class="menu-icon icon-menu"> ver Menu </span>
+        <nav class=navigation>
+            <ul>
+                <li><a href="index.html" class="icon-power-outline"> Salir</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  
+ <div class="container">
+      <h1 id="TituloTop10">PAISES CONTAGIADOS DE COVID EN EL MUNDO SEGUN SU CONTINENTE</h1>
+      <p id="parrafoTop10" >En esta seccion se podra visualizar los paises infectados que se encuentran dentro 
+        ,del continenten Americano, Africano, Oceania/Australia, Europa ,
+        podra visualizar sus noticias usando el selector que se encuentra en la parte inferio y presionando el
+        boton para buscarlo.
+      </p>
+      <form id='form-Continente'>
+      <select id="opc">
+        <option value="America">America</option>
+        <option value="Oceanía/Australia">Oceanía/Australia</option>
+        <option value="Asia">Asia</option>
+        <option value="Europa">Europa</option>
+        <option value="Africa">Africa</option>
+      </select>
+      <input type="submit" value="buscar" class="btn btn-primary col-sm-12 ">
+      </form>
+      <table class="table table-striped mt-5">
+       <thead>
+           <tr>
+               <th>Nombre Pais</th>
+               <th>Descripcion</th>
+               <th>Continente</th>
+               <th>Numero Muertos</th>
+               <th></th>
+           </tr>
+       </thead>
+       <tbody id="continent-list"></tbody>
+   </table>
+ </div>
+ 
+</body>
+<script src="./js/continentes.js"></script>
+<script src="./js/app.js"></script>
+</html>
