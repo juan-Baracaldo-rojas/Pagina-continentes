@@ -1,0 +1,11 @@
+#tituloNoticias{
+    margin-top: 3em;
+    font-family: sans-serif;
+}
+#parrafoNoticias{
+    font-size: 1.2em;
+    text-align: justify;
+}
+li{
+    font-size: 1.2em;
+}

@@ -1,0 +1,15 @@
+#tituloConfTop10{
+    margin-top: 3em;
+    font-family: sans-serif;
+}
+#paises{
+    width: 100%;
+    height: 70px;
+}
+#position{
+    width: 100%;
+    height: 70px;
+}
+.form-group{
+    margin-top: 10px;
+}

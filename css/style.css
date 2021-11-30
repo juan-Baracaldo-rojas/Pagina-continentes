@@ -1,0 +1,148 @@
+@import url(noticiasGenerales.css);
+@import url(Top10.css);
+@import url(configuracionPais.css);
+@import url(configuracion.css);
+@import url(configuracionTop10.css);
+@import url(continentes.css);
+@import url(modificarPais.css);
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.logoImg{
+    margin: 0;
+    left: 0;
+    text-align: center;
+}
+#tituloIndex{
+    margin-top: 3em;
+    text-align: center;
+}
+#parrafoIndex{
+    text-align: justify;
+}
+h1{
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+p{
+    margin-bottom: 1.6em;
+}
+
+.container{
+    width: 85%;
+    max-width: 85%;
+    /* max-width: 850px; */
+    margin: 0 auto;      
+}
+
+.header{
+    background:#04445D;/**/
+    color:#02BBA2;
+    padding: 1rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    z-index: 100;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    
+    letter-spacing: 5px;
+    font-size: 0.4em;
+}
+.menu-icon{
+    display: none;
+    
+    left:0;
+    top:0;
+    right:0;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .navigation ul li{
+        display:inline-block;
+    }
+      
+        .navigation ul li a{
+          display: block;
+          padding: 0.5rem 0.5rem;
+          transition: all 0.4s linear;
+          border-radius: 5px;
+          font-size: 0.7em;
+        }
+            .navigation ul li a:hover{
+                background:#3B85F9 ;
+            }
+.main{
+    padding-top: 10rem;
+    background-color: #246B9E  ;
+}
+
+.footer{
+    background:#f2f2f2;
+    padding: 2rem 0 ;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width:767px) {
+    .container{
+        margin: 3rem;
+    }
+ 
+ .menu-icon{
+     display: block;
+     cursor: pointer;
+     padding: 0.5rem 1rem;
+ }
+
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .navigation ul{
+        display: none;
+    }    
+    .navigation ul.show{
+        display: block;
+    }
+    .navigation ul li{
+            display:block;
+        }
+          
+            .navigation ul li a{
+              display: block;
+              padding: 0.5rem 0;
+              transition: all 0.4s linear;
+              border-radius: 5px;
+            }
+                .navigation ul li a:hover{
+                    background:#3B85F9 ;
+                }
+    .main{
+        padding-top: 12rem;
+    }           
+}
